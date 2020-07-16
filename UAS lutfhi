@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int barang1,barang2,total,bayar,akhir,diskon,uang;
+	cout << "masukan jumlah barang1 yang anda beli : ";
+	cin >> barang1;
+	barang1 = barang1 * 200000;
+	cout << "jadi harga barang1 anda sebesar : " << barang1 << " Rupiah" << endl;
+	
+	cout << "masukan jumlah barang2 yang anda beli : ";
+	cin >> barang2;
+	barang2 = barang2 * 250000;
+	cout << "jadi harga barang2 anda sebesar : " << barang2 << " Rupiah" << endl;
+	
+	total = barang1 + barang2;
+	cout << "jadi harga seluruhnya sebesar : " << total << " Rupiah" << endl;
+	
+	cout << "Total pembayaran : ";
+	cin >> bayar;
+	
+	if (bayar >500000){
+		diskon = bayar*0.10;
+		akhir = bayar-diskon;
+		cout<<endl<<"selamat anda mendapatkan diskon 10%" <<endl;
+		
+	}
+	cout<<endl<<" jadi total pembayaran anda = "<<akhir<<endl;;
+	cout<< "masukan jumlah uang : ";
+	cin>>uang;
+	cout<<"_________________________________"<< endl;
+	int kembalian= uang-akhir;
+	cout<<"kembalian anda : "<<kembalian;
+	return 0;
+
+}
